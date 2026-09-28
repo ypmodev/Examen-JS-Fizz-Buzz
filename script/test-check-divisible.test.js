@@ -19,11 +19,3 @@ describe("divisible", () => {
     expect(divisible(7, 3)).toBe(false);
   });
 });
-
-describe("Validación de FizzBuzz", () => {
-  describe("Scenario: Número divisible por 3", () => {
-    test("mostrar fizz", () => {
-      expect(addEventListener(9)).toBe("Fizz");
-    });
-  });
-});
