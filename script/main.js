@@ -39,6 +39,7 @@ form.addEventListener("submit", (event) => {
     showMessage(numberActual);
     history.push({ number: numberActual, result: result[3] });
   }
+
   clearInputNumber(inputNumber);
   renderHistory(history);
 });
