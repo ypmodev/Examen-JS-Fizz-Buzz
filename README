@@ -1,0 +1,30 @@
+# fizz Buzz
+
+Ejercicio de práctica en JavaScript moderno (ES6+) que valida un número introducido por el usuario y muestra Fizz, Buzz, FizzBuzz o el propio número, según sea divisible por 3, por 5, por ambos o por ninguno.
+
+## 🛠 Tecnologies
+
+- HTML5
+- JavaScript (ES6+, módulos)
+- Vitest para los tests unitarios
+- Git y GitHub
+
+## Estructura
+
+── index.html
+├── src/│  
+│ ├── check-divisible.js
+| ├── main.js  
+| ├── ui.js
+│ └── validate.js  
+├── tests/
+│ └── test-check-divisible.test.js
+│ └── test-validate.test.js
+├── package.json
+└── README.md
+
+## 🚀 Instal·lació
+
+git clone <https://github.com/ypmodev/Examen-JS-Fizz-Buzz.git>
+cd </FizzBuzz>
+npm install
