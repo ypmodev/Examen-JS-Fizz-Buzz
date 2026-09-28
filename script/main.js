@@ -1,55 +1,17 @@
+import { divisible } from "/script/check-divisible.js";
+import { validate } from "/script/validate.js";
+import {
+  getInputNumber,
+  showMessage,
+  clearInputNumber,
+  renderHistory,
+} from "/script/ui.js";
+
+const form = document.querySelector("#form");
 const inputNumber = document.querySelector("#inputNumber");
-const message = document.querySelector("#message");
-const recordHistory = document.querySelector("#recordHistory");
 
 const history = [];
 const result = ["FizzBuzz", "Fizz", "Buzz", "No es divisible"];
-
-//DOM
-function getInputNumber(inputNumber) {
-  return inputNumber.value.trim();
-}
-
-function showMessage(text) {
-  message.textContent = text;
-}
-
-function clearInputNumber(inputNumber) {
-  inputNumber.value = "";
-}
-
-function renderHistory(history) {
-  recordHistory.innerHTML = "";
-
-  history.forEach((item) => {
-    const li = document.createElement("li");
-    li.textContent = `${item.number}: ${item.result}`;
-    recordHistory.appendChild(li);
-  });
-}
-
-//validate
-function validate(inputNumber) {
-  const numberInput = Number(inputNumber);
-
-  if (inputNumber == "") {
-    return false;
-  } else if (isNaN(numberInput) || !Number.isInteger(numberInput)) {
-    return false;
-  }
-
-  return true;
-}
-
-//JS
-
-function divisible(numero, divider) {
-  if (numero % divider === 0) {
-    return true;
-  } else {
-    return false;
-  }
-}
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
